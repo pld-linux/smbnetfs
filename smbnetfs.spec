@@ -2,7 +2,7 @@ Summary:	SMBNetFS
 Summary(pl.UTF-8):	SMBNetFS
 Name:		smbnetfs
 Version:	0.3.10
-Release:	0.1
+Release:	0.3
 License:	GPL
 Group:		Applications/System
 Source0:	http://dl.sourceforge.net/smbnetfs/%{name}-%{version}.tar.bz2
@@ -36,14 +36,12 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+rm -rf $RPM_BUILD_ROOT%{_docdir}/%{name}
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog README TODO
+%doc AUTHORS ChangeLog README TODO doc/INSTALL doc/RUSSIAN.FAQ doc/smbnetfs.conf
 %attr(755,root,root) %{_bindir}/*
-%doc %{_docdir}/%{name}
-%{_docdir}/%{name}/INSTALL
-%{_docdir}/%{name}/RUSSIAN.FAQ
-%{_docdir}/%{name}/smbnetfs.conf
