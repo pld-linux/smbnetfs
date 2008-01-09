@@ -2,7 +2,7 @@ Summary:	SMBNetFS - using Samba/Microsoft Network as a regular filesystem
 Summary(pl.UTF-8):	SMBNetFS - używanie Samby/Microsoft Network jako zwykłego systemu plików
 Name:		smbnetfs
 Version:	0.3.10
-Release:	0.3
+Release:	1
 License:	GPL v2
 Group:		Applications/System
 Source0:	http://dl.sourceforge.net/smbnetfs/%{name}-%{version}.tar.bz2
